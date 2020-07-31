@@ -28,6 +28,24 @@ h2 {
    line-height: 25px;
    border-radius: 4px;
 }
+.button {
+  font-family: 'Recursive', sans-serif;
+  background-color: white;
+  border: 2px solid #f44336;
+  color: #f44336;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #f44336;
+  color: white;
+  border: 2px solid white;
+}
 img {
   border-radius: 15px;
 }
