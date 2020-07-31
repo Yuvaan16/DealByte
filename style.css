@@ -1,0 +1,122 @@
+* {box-sizing: border-box;}
+nav {
+   overflow: hidden;
+   background-color: #330b7c;
+   padding: 10px;
+}
+body {
+  font-family: 'Recursive', sans-serif;
+  background-image: url('bg.webp');
+}
+h1 {
+   text-align: center;
+   color: white;
+}
+h2 {
+   text-align: center;
+   color: white;
+}
+.links {
+   font-family: 'Recursive', sans-serif;
+   font-weight: bold;
+   float: left;
+   color:white;
+   text-align: center;
+   padding: 12px;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 25px;
+   border-radius: 4px;
+}
+img {
+  border-radius: 15px;
+}
+nav .logo {
+   font-size: 25px;
+   font-weight: bold;
+}
+nav .links:hover {
+   background-color: #ff7f27;
+   color: rgb(42, 10, 94);
+}
+nav .selected {
+   background-color: #ff7f27;
+   color: rgb(42, 10, 94);
+}
+.rightSection {
+   float: right;
+}
+a{text-decoration: none;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+}
+@media screen and (max-width: 870px) {
+   nav .links {
+      float: none;
+      display: block;
+      text-align: left;
+   }
+   .rightSection {
+      float: none;
+   }
+}
