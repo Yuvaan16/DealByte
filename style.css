@@ -28,6 +28,7 @@ h2 {
    line-height: 25px;
    border-radius: 4px;
 }
+a{text-decoration: none;}
 .button {
   font-family: 'Recursive', sans-serif;
   background-color: white;
@@ -64,7 +65,6 @@ nav .selected {
 .rightSection {
    float: right;
 }
-a{text-decoration: none;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
