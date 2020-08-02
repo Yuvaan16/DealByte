@@ -15,7 +15,7 @@
 <nav style="background-image: url('hd.jpg');">
 <a class="links logo" href="index.html">DealByte</a>
 <div class="rightSection">
-<a class="selected links" href="index.html">Home</a>
+<a class="links" href="index.html">Home</a>
 <a class="links" href="laptop.html">Laptops</a>
 <a class="links" href="smartphones.html">SmartPhones</a>
 <a class="links" href="accesories.html">Accesories</a>
@@ -30,6 +30,30 @@
 	<h2>Click here to go back to home!</h2>
 	<button class="button" style="text-decoration: none;"><a href="index.html" style="text-decoration: none;">Home Page</button>
 </div>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="#" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b style="color: #ff7f27">Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <a href="query.html"><button type="submit" class="btn">Send</button></a>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
 <footer style="background-image: url('cardboard-wallpaper-template_1194-6785.jpg'); color: white;">
   <h2>Note:</h2>

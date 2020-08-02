@@ -39,10 +39,7 @@ button:hover {
 }
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #ff7f27;
-}
-.signupbtn{
-  background-color: #2a0a5e;
+  background-color: #f44336;
 }
 .cancelbtn, .signupbtn {
   float: left;
@@ -123,7 +120,7 @@ hr {
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   
-    <div class="container" style="background-image: url('cyan.jpg'); width: 60%; margin: auto;">
+    <div class="container" style="background-image: url('cyan.jpg');">
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
@@ -159,6 +156,30 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+</script>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="#" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b style="color: #ff7f27">Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <a href="query.html"><button type="submit" class="btn">Send</button></a>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
 }
 </script>
 

@@ -46,6 +46,30 @@
 
 <br>
 
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="#" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b style="color: #ff7f27">Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <a href="query.html"><button type="submit" class="btn">Send</button></a>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
 <footer style="background-image: url('cardboard-wallpaper-template_1194-6785.jpg'); color: white;">
   <h2>Note:</h2>
   <h3>This website is just for educational purposes, all content used is not for any profit.</h3>
