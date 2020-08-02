@@ -8,6 +8,21 @@ body {
   font-family: 'Recursive', sans-serif;
   background-image: url('bg.webp');
 }
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 10px;
+  background: #2a0a5e;
+}
+::-webkit-scrollbar-thumb {
+  background: orange; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7f27; 
+}
 h1 {
    text-align: center;
    color: white;
