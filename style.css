@@ -9,16 +9,18 @@ body {
   background-image: url('bg.webp');
 }
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 30px;
 }
 ::-webkit-scrollbar-track {
   background-image: url('bg.webp');
 }
 ::-webkit-scrollbar-thumb {
-  background: orange; 
+background-image: url('scroll.png');
+border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff7f27; 
+background-image: url('scrollh.png');
+border-radius: 15px;
 }
 .open-button {
   background-color: orange;
