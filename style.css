@@ -16,11 +16,9 @@ body {
 }
 ::-webkit-scrollbar-thumb {
 background-image: url('scroll.png');
-border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb:hover {
 background-image: url('scrollh.png');
-border-radius: 15px;
 }
 .open-button {
   background-color: orange;
